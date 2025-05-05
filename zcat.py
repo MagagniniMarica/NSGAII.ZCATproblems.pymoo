@@ -382,7 +382,7 @@ def Z_level(w,i, flag_DL,m,n,M):
 # Definition of alpha function
 ###############################################################################
 def alpha(yI, i, ZCAT,M):                             
-  return (i**2) * Fzcat(ZCAT, yI, i, M):  
+  return (i**2) * Fzcat(ZCAT, yI, i, M)
 
 ###############################################################################
 # Definition of beta function
