@@ -5,25 +5,18 @@
 
 import numpy as np
 import csv
+import matplotlib.pyplot as plt
+import timeit
+
 from pymoo.core.problem import ElementwiseProblem
 from pymoo.algorithms.moo.nsga2 import NSGA2
 from pymoo.operators.crossover.sbx import SBX
 from pymoo.operators.mutation.pm import PM
 from pymoo.operators.sampling.rnd import FloatRandomSampling
-
 from pymoo.config import Config
 Config.warnings['not_compiled'] = False
-
 from pymoo.termination import get_termination
-
 from pymoo.optimize import minimize
-
-import matplotlib.pyplot as plt
-
-#from pymoo.util.ref_dirs import get_reference_directions
-#from pymoo.visualization.scatter import Scatter
-
-import timeit
 
 from zcat import setG, f, Bias
 
